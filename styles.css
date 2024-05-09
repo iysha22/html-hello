@@ -1,40 +1,43 @@
-body{
+body {
     background: #BDBDBD;
     margin: 0;
-}
-div{
-    box-sizing: border-box;
-}
-header{
+    padding: 0;  
+  }
+  
+  header {
     background: white;
     padding: 10px;
-}
-header h1{
-    margin: 0;
-}
-div.post{
-    background: white;
-    margin-top: 10px;
-}
-div.post img{
-    width: 100%;
-}
-div.post .post-header div:first-child {
-    display: inline-block;
-    width: 80%;
-}
-div.post .post-header div:last-child {
-    display: inline-block;
-    width: 20%;
-    padding: 10px;
-    text-align: right;
-    color: grey;
-}
-div.post h2, div.post p{
-    padding: 10px;
-    margin: 0;
-}
-div.container{
+    margin-bottom: 20px;
+  }
+      
+  
+  .container {
     width: 600px;
     margin: auto;
-}
+    padding: 0;  
+  }
+  
+  .post {
+    background: white;  
+    margin: 10px 0;
+    padding: 10px; 
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;  
+  }
+  
+  img {
+    width: 100%;
+    margin: 0;  
+  }
+  
+  p {
+    margin: 0;  
+    padding: 10px;  
+    background: white; 
+  }
+  

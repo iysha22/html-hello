@@ -1,0 +1,43 @@
+body {
+    background: #BDBDBD;
+    margin: 0;
+    padding: 0;  
+  }
+  
+  header {
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+      
+  
+  .container {
+    width: 600px;
+    margin: auto;
+    padding: 0;  
+  }
+  
+  .post {
+    background: white;  
+    margin: 10px 0;
+    padding: 10px; 
+  }
+  
+  .post-header {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;  
+  }
+  
+  img {
+    width: 100%;
+    margin: 0;  
+  }
+  
+  p {
+    margin: 0;  
+    padding: 10px;  
+    background: white; 
+  }
+  

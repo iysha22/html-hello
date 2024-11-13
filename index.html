@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+     body {
+    background-color: #f0f8ff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.card {
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+}
+
+.card-header {
+    background-color: #ff6f61;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 2px solid #ff6f61;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: #feb47b;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border-color: #ff6f61;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #feb47b;
+    border-color: #feb47b;
+    transform: scale(1.05);
+}
+
+.btn-block {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.form-row {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+    .card {
+        margin: 10px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Formulario de Pago</h2>
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" class="form-control" id="direccion" placeholder="Ingresa tu dirección" required>
+            </div>
+            <div class="form-group">
+                <label for="estado">Estado</label>
+                <select class="form-control" id="estado" required>
+                    <option value="">Selecciona tu estado</option>
+                    <option value="España">España</option>
+                    <option value="Estados Unidos">Estados Unidos</option>
+                    <option value="Reino Unido">Reino Unido</option>
+                    <option value="mexico">México</option>
+                    <option value="Africa">Africa</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Filipinas">Filipinas</option>
+                    <option value="Suiza">Suiza</option>
+                    <option value="Noruega">Noruega</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="tarjeta">Número de tarjeta de crédito</label>
+                <input type="text" class="form-control" id="tarjeta" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="expiracion">Fecha de expiración</label>
+                    <input type="month" class="form-control" id="expiracion" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="XXX" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Pagar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
